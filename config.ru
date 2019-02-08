@@ -1,8 +1,9 @@
 require 'rack/lobster'
+require 'socket'
 
 map '/health' do
   health = proc do |env|
-    [200, { "Content-Type" => "text/html" }, ["1"]]
+    [200, { "Content-Type" => "text/html" }, [Socket.ip_address_list[1].ip_address]]
   end
   run health
 end
