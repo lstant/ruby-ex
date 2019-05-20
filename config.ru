@@ -12,7 +12,7 @@ map '/lobster' do
   run Rack::Lobster.new
 end
 
-map '/headers' do
+map '/' do
   headers = proc do |env|
     [200, { "Content-Type" => "text/plain" }, [
       env.select {|key,val| key.start_with? 'HTTP_'}
@@ -25,7 +25,7 @@ map '/headers' do
   run headers
 end
 
-map '/' do
+map '/welcome' do
   welcome = proc do |env|
     [200, { "Content-Type" => "text/html" }, [<<WELCOME_CONTENTS
 <!doctype html>
