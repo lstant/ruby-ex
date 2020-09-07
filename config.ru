@@ -240,7 +240,7 @@ pre {
 
 <section class='container'>
           <hgroup>
-            <h1>DEMO APPLICATION</h1>
+            <h1>Welcome to the demo!</h1>
           </hgroup>
 </section>
 
