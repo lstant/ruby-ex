@@ -27,7 +27,7 @@ end
 
 map '/demo' do
   welcome = proc do |env|
-    [200, { "Content-Type" => "text/html" }, [<<WELCOME_CONTENTS
+    [200, { "Content-Type" => "text/html" }, [<<DEMO_CONTENTS
 <!doctype html>
 <html lang="en">
 <head>
