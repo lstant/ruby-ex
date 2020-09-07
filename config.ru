@@ -181,7 +181,7 @@ h1, h2, h3 {
 h1 {
   font-size: 25px;
   font-weight: 300;
-  border-bottom: 1px solid #fff;
+  border-bottom: 0px solid #fff;
   margin-bottom: .5em;
 }
 h1:after {
